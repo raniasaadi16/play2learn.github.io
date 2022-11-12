@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    height: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+    border-bottom: 1px solid #000
+}
+nav .btn{
+    display: none;
+}
+nav h1{
+    font-size: 40px;
+}
+nav ul{
+    display: flex;
+    position: relative;
+}
+nav ul .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+}
+nav ul .dropdown-content a{
+    display: block;
+    color: #000;
+    margin: 5px 0 ;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+nav ul li .active{
+    text-decoration: none;
+}
+.container{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.reviews-container{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.reviews{
+    display: flex;
+}
+.reviews .review {
+    flex: 0 0 100%;
+}
+.reviews-container h5{
+    font-size: 22px;
+}
+.reviews .review .text{
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    color: green;
+}
+.reviews .review .person{
+    font-size: 18px;
+    margin-left: auto;
+    width: max-content;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.games{
+    margin-top: 60px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+}
+.games .game .title{
+    font-size: 22px;
+    font-weight: 400;
+}
+.games .game p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.games .game a{
+    margin-left: auto;
+    display: block;
+    width: max-content;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: green;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+
+.about,
+.contact,
+.login,
+.register {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.about .title,
+.contact .title,
+.login .title,
+.register .title{
+    font-size: 42px;
+}
+.about p,
+.login p,
+.register p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact form,
+.login form,
+.register form{
+    margin-top: 20px;
+    width: max-content;
+}
+.contact form .row,
+.login form .row,
+.register form .row{
+    display: flex;
+    margin: 10px 0;
+}
+.contact form p,
+.login form p,
+.register form p{
+    font-weight: bold;
+    font-size: 18px;
+    width: 165px;
+}
+.contact form input,
+.login form input,
+.register form input,
+.contact form textarea{
+    min-width: 400px;
+    margin-left: 20px;
+    border: 2px solid #000;
+    padding: 2px 0;
+}
+.login form input,
+.register form input{
+    min-width: 200px;
+}
+.register form .check{
+    min-width: auto;
+}
+.contact form button,
+.login form button,
+.register form button{
+    background: green;
+    display: block;
+    border: none;
+    color: #fff;
+    margin-left: auto;
+    padding: 2px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.about,
+.login,
+.register{
+    margin-bottom: 220px;
+}
+.register{
+    display: none;
+}
+
+.anagram, math{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.anagram-title h1,
+.math-title h1{
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+}
+.anagram .row,
+.math .row{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.anagram p,
+.math p{
+    font-weight: bold;
+    margin-right: 20px;
+}
+.anagram select,
+.math select{
+    margin-right: 20px;
+}
+.anagram button,
+.math button{
+    padding: 3px 7px;
+    background: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.anagram .num,
+.math .num{
+    text-align: center;
+    color: green;
+}
+.anagram textarea,
+.math input{
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #000;
+    font-size: 22px;
+}
+.anagram textarea::placeholder{
+    font-size: 30px;
+}
+.anagram .time{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+#game-play-screen,
+#game-end-screen{
+    display: none;
+}
+.anagram .inst,
+.math .inst{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+.anagram .inst p,
+.math .inst p{
+    font-weight: normal;
+}
+.anagram .inst span,
+.math .inst span{
+    font-weight: bold;
+}
+#end-game{
+    display: none;
+}
+.anagram .help{
+    border-radius: 50%;
+    border: 2px solid #000;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.anagram .help p{
+    margin: 0;
+}
+.anagram .help .help-text{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 20px;
+    width: 150px;
+    z-index: 100;
+    background: #fff;
+    display: none;
+}
+.anagram .help:hover .help-text{
+    display: block;
+}
+#letter{
+    text-transform: uppercase;
+}
+#end-game{
+    text-align: center;
+    margin-top: 10px;
+}
+#end-game #fail{
+    font-weight: normal;
+    font-size: 22px;
+}
+#end-game ul{
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 20px 0;
+}
+.contact-re{
+    font-weight: normal !important;
+    font-size: 18px;
+}
+#play-again{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.text-red{
+    color: red;
+}
+.time span{
+    font-weight: normal;
+}
+.time #timer{
+    text-decoration: underline;
+}
+.math input{
+    max-width: 100px;
+}
+.math .calc button{
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    margin-right: 10px;
+}
+.math .calc #clear{
+    width: 90px;
+}
+.math#game-play-screen{
+    text-align: center;
+}
+.math #operation-name,
+#operation-n{
+    font-size: 24px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.math #operation-display{
+    font-size: 22px;
+}
+.math .info{
+    text-align: start;
+    margin: auto;
+    width: max-content;
+    margin-top: 20px;
+}
+.math #score{
+    font-weight: normal;
+}
+.math#game-end-screen{
+    text-align: center;
+}
+.math .text-red{
+    margin: 20px 0 ;
+    font-size: 22px;
+}
+.math#game-end-screen h2{
+    font-size: 35px ;
+    font-weight: normal;
+}
+.math #final-score{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+.math,
+.anagram{
+    margin-bottom: 200px;
+}
+footer{
+    margin-top: 40px;
+    width: 100%;
+
+}
+footer hr{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer .content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+@media screen and (max-width: 762px) {
+    nav{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        width: 100%;
+        background-color: green;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+    nav ul.show{
+        display: block;
+    }
+    nav ul li{
+        margin: 10px 0;
+    }
+    nav .dropdown-content{
+        position: relative !important;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        background: green !important;
+    }
+    nav ul a{
+        color: #fff !important;
+    }
+    nav .btn{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        cursor: pointer;
+        display: block;
+    }
+    nav h1{
+        font-size: 30px;
+    }
+    section{
+        padding: 0 40px;
+    }
+    .contact form .row, .login form .row, .register form .row{
+        display: block;
+    }
+    .contact form p, .login form p, .register form p{
+        width: auto;
+        font-size: 14px;
+    }
+    .login form input, .register form input,.contact form input, .contact form textarea{
+        min-width: auto;
+        margin-left: 0;
+    }
+    .anagram .help .help-text{
+        left: -100px;
+    }
+    .games{
+        grid-template-columns: 1fr;
+    }
+}

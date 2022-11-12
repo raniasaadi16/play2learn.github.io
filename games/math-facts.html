@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Play2Learn</title>
+</head>
+
+<body>
+    <!--Nav-->
+    <nav>
+        <h1>Play2Learn Logo</h1>
+        <div class="btn"><img src="../img/menu-icon.png" width="20" height="20" alt=""></div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="javascript:void(0)" class="dropbtn active">Games</a>
+                <div class="dropdown-content">
+                    <a href="./anagram-hunt.html">Anagram Hunt</a>
+                    <a href="./math-facts.html">Math Facts Practice</a>
+                </div>
+            </li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="math-title">
+        <h1>Math Facts Practice</h1>
+    </div>
+    <section class="math container" id="game-start-screen">
+        <div class="row">
+            <p>Operation:</p>
+            <select name="operation" id="operation">
+                <option value="addition">Addition</option>
+                <option value="substraction">Substraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+            <button id="startGame">Go</button>
+        </div>
+        <div class="inst">
+            <p>1.Select operation</p>
+            <p>2.Press <span>Go</span></p>
+            <p>3.How many problems can you solve in 30 seconds?</p>
+        </div>
+    </section>
+
+    <section class="math container" id="game-play-screen">
+        <div>
+            <p id="operation-name"></p>
+            <p id="operation-display"></p>
+            <input type="number" id="inputnum">
+            <div class="calc">
+                <div class="row">
+                    <button id="num">1</button>
+                    <button id="num">2</button>
+                    <button id="num">3</button>
+                </div>
+                <div class="row">
+                    <button id="num">4</button>
+                    <button id="num">5</button>
+                    <button id="num">6</button>
+                </div>
+                <div class="row">
+                    <button id="num">7</button>
+                    <button id="num">8</button>
+                    <button id="num">9</button>
+                </div>
+                <div class="row">
+                    <button id="num">0</button>
+                    <button id="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <p>Score :<span id="score"></span></p>
+            <p class="time">Time Left: <span id="timer"></span>seconds</p>
+        </div>
+    </section>
+
+    <section class="math container" id="game-end-screen">
+        <p id="operation-n"></p>
+        <p class="text-red">Times up!</p>
+        <h2>Your final score is :</h2>
+        <p id="final-score"></p>
+        <button id="play-again">Play again</button>
+    </section>
+
+    
+    
+
+    
+
+    <footer class="container">
+        <hr>
+        <div class="content">
+            <p> 2020 Play2Learn</p>
+            <div>
+                <a href="contact-us.html">
+                    <img src="../img/pngkey.com-mail-icon-png-7798.png" width="40" height="40" alt="">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="../img/—Pngtree—instagram icon instagram logo_3584911.png" width="40" height="40" alt="">
+                </a>
+                <a href=" https://twitter.com">
+                    <img src="../img/SeekPng.com_square-icon-png_3516255.png" width="40" height="40" alt="">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="../img/—Pngtree—black facebook icon facebook logo_3584912.png" width="40" height="40" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

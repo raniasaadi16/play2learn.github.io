@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Play2Learn</title>
+</head>
+
+<body>
+    <!--Nav-->
+    <nav>
+        <h1>Play2Learn Logo</h1>
+        <div class="btn"><img src="./img/menu-icon.png" width="20" height="20" alt=""></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="javascript:void(0)" class="dropbtn">Games</a>
+                <div class="dropdown-content">
+                    <a href="games/anagram-hunt.html">Anagram Hunt</a>
+                    <a href="games/math-facts.html">Math Facts Practice</a>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html" class='active'>Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="login container">
+        <h1 class="title">Login</h1>
+        <form action="">
+            <div class="row">
+                <p>Your email:</p>
+                <input type="text" required>
+            </div>
+            <div class="row">
+                <p>Password:</p>
+                <input type="password" required>
+            </div>
+            <button type="submit">LOGIN</button>
+            <a href="javascript:void(0)">Need an account? Register</a>
+        </form>
+    </section>
+
+    <section class="register container">
+        <h1 class="title">Register</h1>
+        <form action="">
+            <div class="row">
+                <p>Your email:</p>
+                <input type="text" required>
+            </div>
+            <div class="row">
+                <p>Password:</p>
+                <input type="password" required>
+            </div>
+            <div class="row">
+                <p>Repeat Password:</p>
+                <input type="password" required>
+            </div>
+            <div class="row">
+                <p></p>
+                <div>
+                    <input type="checkbox" id="age" name="age" class="check" value="Boat">
+                    <label for="age"> I am over 13 and like playing games</label><br>
+                </div>
+            </div>
+            <button type="submit">REGISTER</button>
+            <a href="javascript:void(0)">Have an account? Login</a>
+        </form>
+    </section>
+
+    
+
+    <footer class="container">
+        <hr>
+        <div class="content">
+            <p> 2020 Play2Learn</p>
+            <div>
+                <a href="contact-us.html">
+                    <img src="./img/pngkey.com-mail-icon-png-7798.png" width="40" height="40" alt="">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/—Pngtree—instagram icon instagram logo_3584911.png" width="40" height="40" alt="">
+                </a>
+                <a href=" https://twitter.com">
+                    <img src="./img/SeekPng.com_square-icon-png_3516255.png" width="40" height="40" alt="">
+                </a>
+                <a href="https://facebook.com">
+                    <img src="./img/—Pngtree—black facebook icon facebook logo_3584912.png" width="40" height="40" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
