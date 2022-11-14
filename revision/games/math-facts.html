@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap" rel="stylesheet">
+    <title>Play2Learn</title>
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="flex">
+        <h1 class="bold italic text-primary">Play2Learn</h1>
+        <div class="btn-m"><img src="../assets/img/menu-icon.png" width="20" height="20" alt=""></div>
+        <ul class="flex items-center">
+            <li>
+                <a href="../index.html">Home</a>
+                <li>
+                    <a href="javascript:void(0)" class="active text-primary dropbtn">Games</a>
+                    <div class="dropdown-content">
+                        <a href="./anagram-hunt.html">Anagram Hunt</a>
+                        <a href="./math-facts.html">Math Facts Practice</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../about.html">About</a>
+                </li>
+                <li>
+                    <a href="../login.html" class="btn rounded bg-primary">Login</a>
+                </li>
+            </li>
+        </ul>
+    </nav>
+
+    <!--header-->
+    <header class="math bg-secondary text-center">
+        <h1 class="bold">Math Practice Facts</h1>
+    </header>
+
+    <!--game-->
+    <!--first screen-->
+    <section class="mt-4 math container" id="game-start-screen">
+        <div class="flex justify-center items-center">
+            <p class="bold le">Operation:</p>
+            <select name="operation" id="operation">
+                <option value="addition">Addition</option>
+                <option value="substraction">Substraction</option>
+                <option value="multiplication">Multiplication</option>
+                <option value="division">Division</option>
+            </select>
+            <button id="startGame" class="btn rounded bg-primary text-white">Go</button>
+        </div>
+        <div class="inst mt-4">
+            <h3 class="title text-primary bold">Instructions</h3>
+            <p class="semi-bold">1.Select operation</p>
+            <p class="semi-bold">2.Press <span class="bold">Go</span></p>
+            <p class="semi-bold">3.How many problems can you solve in 30 seconds?</p>
+        </div>
+    </section>
+
+    <!--play screen-->
+    <section class="math container mt-4" id="game-play-screen">
+        <div>
+            <p id="operation-name" class="text-center"></p>
+            <p id="operation-display" class="text-center"></p>
+            <input type="number" id="inputnum">
+            <div class="calc">
+                <div class="flex justify-center">
+                    <button id="num">1</button>
+                    <button id="num">2</button>
+                    <button id="num">3</button>
+                </div>
+                <div class="flex justify-center">
+                    <button id="num">4</button>
+                    <button id="num">5</button>
+                    <button id="num">6</button>
+                </div>
+                <div class="flex justify-center">
+                    <button id="num">7</button>
+                    <button id="num">8</button>
+                    <button id="num">9</button>
+                </div>
+                <div class="flex justify-center">
+                    <button id="num">0</button>
+                    <button id="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+        <div class="info">
+            <p>Score :<span id="score"></span></p>
+            <p class="time">Time Left: <span id="timer"></span>seconds</p>
+        </div>
+    </section>
+
+    <!--game end screen-->
+    <section class="math container text-center mt-4" id="game-end-screen">
+        <p id="operation-n"></p>
+        <p class="text-red">Times up!</p>
+        <h2>Your final score is :</h2>
+        <p id="final-score"></p>
+        <button id="play-again" class="btn rounded bg-primary text-white">Play again</button>
+    </section>
+
+
+    <footer class="mt-4">
+        <p class="text-center italic">Play2Learn -All rights reserved-</p>
+        <div class="flex justify-center">
+            <a href="../contact-us.html">
+                <img src="../assets/img/message.png" alt="">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="../assets/img/fb.png" alt="">
+            </a>
+            <a href="https://www.twitter.com">
+                <img src="../assets/img/twitter.png" alt="">
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="../assets/img/insta.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="../assets/javascript/script.js"></script>
+    <script src="../assets/javascript/math.js"></script>
+</body>
+</html>
