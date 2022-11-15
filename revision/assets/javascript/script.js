@@ -1,14 +1,3 @@
-/**Dropdown */
-const dropdownBtn = document.querySelector('.dropbtn')// dropdown btn
-const dropdownContent = document.querySelector('.dropdown-content')// dropdown btn
-
-dropdownBtn.addEventListener('click', function(){
-    if(dropdownContent.style.display === 'block'){
-        dropdownContent.style.display='none'
-    }else{
-        dropdownContent.style.display='block'
-    }
-})
 
 /**for make a responsive navbar */
 const btn = document.querySelector('nav .btn-m')

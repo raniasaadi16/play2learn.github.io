@@ -188,6 +188,7 @@ function game(){
     const randomArray = listOfArrays[Math.floor(Math.random() * listOfArrays.length)];
     const randomWord = randomArray[Math.floor(Math.random() * randomArray.length)]; // choose the word displayed on the screen rando,ly
     const answers = randomArray.filter(word => word !== randomWord); // store array of answers in variable
+    console.log(answers)
     startScreenAn.style.display = 'none'  // hide start screen
     playScreenAn.style.display = 'block' // show play screen
 

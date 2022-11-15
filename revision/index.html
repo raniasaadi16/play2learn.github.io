@@ -19,7 +19,7 @@
         <ul class="flex items-center">
             <li>
                 <a href="./index.html" class="active text-primary">Home</a>
-                <li>
+                <li class="onhover">
                     <a href="javascript:void(0)" class="dropbtn">Games</a>
                     <div class="dropdown-content">
                         <a href="games/anagram-hunt.html">Anagram Hunt</a>
@@ -37,8 +37,38 @@
     </nav>
 
     <!--header-->
-    <header class="home">
-        <h1 class="bold text-white">Discover a limitless world of learning</h1>
+    <header class="home flex justify-center items-center">
+        <div class="reviews-container">
+            <div class="container">
+                <h3 class="text-center bold title text-white">Happy Clients Say...</h3>
+                <div class="reviews">
+                    <div class="review">
+                        <div class="text rounded">
+                            <p class="text-primary italic text-center">"I've never had more fun than i do playing Anagram Hunt. It is the best game ever invented!"</p>
+                        </div>
+                        <p class="person text-white">-Justin Jest-</p>
+                    </div>
+                    <div class="review">
+                        <div class="text rounded">
+                            <p class="text-primary italic text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, officia impedit dignissimos consequuntur!"</p>
+                        </div>
+                        <p class="person text-white">-Mr Anderson-</p>
+                    </div>
+                    <div class="review">
+                        <div class="text rounded">
+                            <p class="text-primary italic text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. !"</p>
+                        </div>
+                        <p class="person text-white">-Mary smith-</p>
+                    </div>
+                    <div class="review" id="first">
+                        <div class="text rounded">
+                            <p class="text-primary italic text-center">"I've never had more fun than i do playing Anagram Hunt. It is the best game ever invented!"</p>
+                        </div>
+                        <p class="person text-white">-Justin Jest-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!--games-->
@@ -52,7 +82,7 @@
                     <p class="justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, officia impedit dignissimos consequuntur, similique rem excepturi mollitia repellat reprehenderit qui sequi enim eligendi veritatis aliquid assumenda aliquam suscipit cumque neque.
                     </p>
-                    <a href="games/anagram-hunt.html" class="btn bg-primary rounded text-white bold">Play Now</a>
+                    <a href="games/anagram-hunt.html" class="ml-auto btn bg-primary rounded text-white bold">Play Now</a>
                 </div>
             </div>
             <div class="game rounded">
@@ -62,46 +92,15 @@
                     <p class="justify">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, officia impedit dignissimos consequuntur, similique rem excepturi mollitia repellat reprehenderit qui sequi enim eligendi veritatis aliquid assumenda aliquam suscipit cumque neque.
                     </p>
-                    <a href="games/math-facts.html" class="btn bg-primary rounded text-white bold"> Play Now</a>
+                    <a href="games/math-facts.html" class="ml-auto btn bg-primary rounded text-white bold"> Play Now</a>
                 </div>
             </div>
         </div>
     </section>   
     
-    <!--reviews-->
-    <section class="mt-5 reviews-container bg-secondary" id="reviews">
-        <div class="container">
-            <h3 class="text-center bold title">Happy Clients Say...</h3>
-            <div class="reviews">
-                <div class="review">
-                    <div class="text rounded">
-                        <p class="text-primary italic text-center">"I've never had more fun than i do playing Anagram Hunt. It is the best game ever invented!"</p>
-                    </div>
-                    <p class="person">-Justin Jest-</p>
-                </div>
-                <div class="review">
-                    <div class="text rounded">
-                        <p class="text-primary italic text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, officia impedit dignissimos consequuntur!"</p>
-                    </div>
-                    <p class="person">-Mr Anderson-</p>
-                </div>
-                <div class="review">
-                    <div class="text rounded">
-                        <p class="text-primary italic text-center">"Lorem ipsum dolor sit amet consectetur adipisicing elit. !"</p>
-                    </div>
-                    <p class="person">-Mary smith-</p>
-                </div>
-                <div class="review" id="first">
-                    <div class="text rounded">
-                        <p class="text-primary italic text-center">"I've never had more fun than i do playing Anagram Hunt. It is the best game ever invented!"</p>
-                    </div>
-                    <p class="person">-Justin Jest-</p>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
 
-    <footer>
+    <footer class="mt-4">
         <p class="text-center italic">Play2Learn -All rights reserved-</p>
         <div class="flex justify-center">
             <a href="./contact-us.html">
